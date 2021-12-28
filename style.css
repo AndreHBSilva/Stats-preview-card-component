@@ -12,6 +12,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   height: 100%;
   color: #d0cfdd;
   font-size: 15px;
@@ -30,13 +31,21 @@ body {
 .main-card {
   display: inline-flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
+  height: 50%;
   border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: hsl(244, 38%, 16%);
   margin-top: auto;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.main-card-content {
+  width: 50%;
 }
 
 .main-card-heading {
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
@@ -44,6 +53,16 @@ body {
   color: hsl(277, 64%, 61%);
 }
 
-.main-card img {
+.main-card-img-overlay img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.main-card-img-overlay {
   width: 50%;
+  background: linear-gradient(0deg, hsla(277, 40%, 33%, 0.7), hsla(277, 40%, 33%, 0.7)), url("./images/image-header-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
