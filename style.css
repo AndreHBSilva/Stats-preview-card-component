@@ -28,6 +28,8 @@ body {
 }
 
 .main-card {
+  display: inline-flex;
+  justify-content: space-between;
   width: 50%;
   border-style: solid;
   margin-top: auto;
@@ -40,4 +42,8 @@ body {
 
 .main-card-heading strong {
   color: hsl(277, 64%, 61%);
+}
+
+.main-card img {
+  width: 50%;
 }
